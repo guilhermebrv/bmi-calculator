@@ -9,9 +9,9 @@ import UIKit
 
 class HomeViewModel {
     
-    public func calculateBMI(height: Float, weight: Float) -> Float {
+    public func calculateBMI(height: Float, weight: Float) -> String {
         let bmi = weight / pow(height, 2)
-        return bmi
-    }
-    
+        let shorterBMI = String(format: "%.1f", bmi)
+        return shorterBMI
+    }    
 }

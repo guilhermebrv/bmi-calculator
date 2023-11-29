@@ -9,10 +9,11 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    private var resultValue: Float
+    private var resultValue: String
     private var screen: ResultView?
+    private var viewModel: ResultViewModel = ResultViewModel()
     
-    init(resultValue: Float) {
+    init(resultValue: String) {
         self.resultValue = resultValue
         super.init(nibName: nil, bundle: nil)
     }
@@ -29,8 +30,31 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
-        print(resultValue)
+        updateScreen()
+        signProtocols()
+    }
+}
+
+extension ResultViewController {
+    
+    private func updateScreen() {
+        screen?.resultNumberLabel.text = resultValue
+        if let result = Float(resultValue) {
+            let color = viewModel.getBgColor(bmiValue: result)
+            screen?.bgView.backgroundColor = color
+            let advice = viewModel.getAdvice(bmiValue: result)
+            screen?.adviceLabel.text = advice
+        }
     }
     
+    private func signProtocols() {
+        screen?.delegate(delegate: self)
+    }
+    
+}
 
+extension ResultViewController: ResultViewProtocol {
+    func tappedRecalculateButton() {
+        navigationController?.popViewController(animated: true)
+    }
 }

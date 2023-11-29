@@ -23,6 +23,13 @@ class HomeViewController: UIViewController {
         signProtocols()
     }
     
+    override func viewIsAppearing(_ animated: Bool) {
+        screen?.heightSlider.value = 1.5
+        screen?.heightNumberLabel.text = "1.50m"
+        screen?.weightSlider.value = 150
+        screen?.weightNumberLabel.text = "150.0kg"
+    }
+    
     private func signProtocols() {
         screen?.delegate(delegate: self)
     }

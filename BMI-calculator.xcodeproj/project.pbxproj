@@ -16,6 +16,8 @@
 		2B3FCD1B2B15097500BC8685 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3FCD1A2B15097500BC8685 /* Assets.xcassets */; };
 		2B3FCD1E2B15097500BC8685 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3FCD1C2B15097500BC8685 /* LaunchScreen.storyboard */; };
 		2B3FCD262B1509E200BC8685 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3FCD252B1509E200BC8685 /* HomeView.swift */; };
+		2BB131CA2B175B78006E9189 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB131C92B175B78006E9189 /* BMI.swift */; };
+		2BB131CC2B175D85006E9189 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB131CB2B175D85006E9189 /* ResultViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		2B3FCD1D2B15097500BC8685 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B3FCD1F2B15097500BC8685 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B3FCD252B1509E200BC8685 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2BB131C92B175B78006E9189 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		2BB131CB2B175D85006E9189 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 				2B3FCD252B1509E200BC8685 /* HomeView.swift */,
 				2B3FCD152B15097200BC8685 /* HomeViewController.swift */,
 				2B2770042B1648C500C2A847 /* HomeViewModel.swift */,
+				2BB131C92B175B78006E9189 /* BMI.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -58,6 +63,7 @@
 			children = (
 				2B2770002B1644C000C2A847 /* ResultView.swift */,
 				2B2770022B16459C00C2A847 /* ResultViewController.swift */,
+				2BB131CB2B175D85006E9189 /* ResultViewModel.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -163,9 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B3FCD162B15097200BC8685 /* HomeViewController.swift in Sources */,
+				2BB131CC2B175D85006E9189 /* ResultViewModel.swift in Sources */,
 				2B3FCD262B1509E200BC8685 /* HomeView.swift in Sources */,
 				2B2770052B1648C500C2A847 /* HomeViewModel.swift in Sources */,
 				2B2770012B1644C000C2A847 /* ResultView.swift in Sources */,
+				2BB131CA2B175B78006E9189 /* BMI.swift in Sources */,
 				2B3FCD122B15097200BC8685 /* AppDelegate.swift in Sources */,
 				2B3FCD142B15097200BC8685 /* SceneDelegate.swift in Sources */,
 				2B2770032B16459C00C2A847 /* ResultViewController.swift in Sources */,
