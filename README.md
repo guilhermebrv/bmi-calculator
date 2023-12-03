@@ -2,6 +2,10 @@
 
 This project marks a significant milestone in my journey through the ["iOS & Swift - The Complete iOS App Development Bootcamp"](https://www.udemy.com/course/ios-13-app-development-bootcamp) taught by Angela Yu on Udemy. As part of this course module, I successfully developed a Body Mass Index (BMI) calculator that delivers some not-so-serious health recommendations based on user weight and height.
 
+<img src="https://github.com/guilhermebrv/bmi-calculator/assets/104163003/21d0000a-4d21-4b9b-b193-7f652cda915b" width="200" height="400" />
+<img src="https://github.com/guilhermebrv/bmi-calculator/assets/104163003/b7a5aefa-fef1-4759-8fca-416b9641cf4e" dwidth="200" height="400" />
+<img src="https://github.com/guilhermebrv/bmi-calculator/assets/104163003/38510577-2460-438d-9ba0-72aac03b8e22" width="200" height="400" />
+
 ## Key Features
 
 - **Interactive UI Sliders:** Implemented dynamic UI sliders to allow users to observe real-time updates of weight and height values, fostering an engaging in an interactive calculation experience.
